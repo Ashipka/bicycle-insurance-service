@@ -19,6 +19,11 @@ import jakarta.validation.constraints.*;
 
 
 public class Bicycle   {
+
+  public static final int AGE_MIN = 0;
+  public static final int AGE_MAX = 15;
+
+
   @JsonProperty("make")
   private String make = null;
 
@@ -184,7 +189,7 @@ public class Bicycle   {
    * Get risks
    * @return risks
    **/
-  @Schema(description = "")
+  @Schema(description = "", example = "[\"THIRD_PARTY_DAMAGE\",\"DAMAGE\",\"THEFT\"]")
 
     public List<String> getRisks() {
     return risks;

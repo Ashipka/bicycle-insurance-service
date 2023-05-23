@@ -17,7 +17,7 @@ import java.util.*;
 public class PremiumResponseObjects   {
   @JsonProperty("attributes")
   @Valid
-  private Map<String, String> attributes = null;
+  private Map<String, Object> attributes = null;
 
   @JsonProperty("risks")
   @Valid
@@ -29,7 +29,7 @@ public class PremiumResponseObjects   {
   @JsonProperty("premium")
   private Double premium = null;
 
-  public PremiumResponseObjects attributes(Map<String, String> attributes) {
+  public PremiumResponseObjects attributes(Map<String, Object> attributes) {
     this.attributes = attributes;
     return this;
   }
@@ -48,11 +48,11 @@ public class PremiumResponseObjects   {
    **/
   @Schema(description = "")
 
-    public Map<String, String> getAttributes() {
+    public Map<String, Object> getAttributes() {
     return attributes;
   }
 
-  public void setAttributes(Map<String, String> attributes) {
+  public void setAttributes(Map<String, Object> attributes) {
     this.attributes = attributes;
   }
 
