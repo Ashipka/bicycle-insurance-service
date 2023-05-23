@@ -43,7 +43,7 @@ public class SwaggerDocumentationConfig {
         return new Contact()
                 .name("Oleksandr Shypka")
                 .email("a.s.shipka@gmail.com")
-                .url("https://github.com/Ashipka");
+                .url("https://github.com/Ashipka/bicycle-insurance-service");
     }
 
 }

@@ -2,7 +2,6 @@ package io.swagger.service;
 
 import io.swagger.model.*;
 import io.swagger.service.groovy.RuleEngine;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

@@ -1,11 +1,14 @@
 package io.swagger.service.groovy
 
-import groovy.io.FileType
+
 import io.swagger.model.Bicycle
 
 import java.lang.reflect.Constructor
 
 class RuleEngine {
+    public static final String INSURANCE_SUM_SCRIPT_FOLDER = "src/main/java/io/swagger/service/groovy/riskTypeScript/insuranceSumRule"
+    public static final String PREMIUM_SCRIPT_FOLDER = "src/main/java/io/swagger/service/groovy/riskTypeScript/premiumRule"
+
     private Map<String, RiskTypeInsuranceSumRule> insuranceSumRules = [:]
     private Map<String, RiskTypePremiumRule> premiumRules = [:]
 
@@ -35,8 +38,7 @@ class RuleEngine {
     }
 
     void loadInsuranceSumRules() {
-        String insuranceSumScriptFolderStr = "src/main/java/io/swagger/service/groovy/riskTypeScript/insuranceSumRule"
-        def insuranceSumScriptFolder = new File(insuranceSumScriptFolderStr)
+        def insuranceSumScriptFolder = new File(INSURANCE_SUM_SCRIPT_FOLDER)
         def insuranceSumScripts = insuranceSumScriptFolder.listFiles(new FilenameFilter() {
             boolean accept(File dir, String name) {
                 return name.endsWith(".groovy")
@@ -53,8 +55,7 @@ class RuleEngine {
     }
 
     void loadPremiumRules() {
-        String premiumScriptFolderStr = "src/main/java/io/swagger/service/groovy/riskTypeScript/premiumRule"
-        def premiumScriptFolder = new File(premiumScriptFolderStr)
+        def premiumScriptFolder = new File(PREMIUM_SCRIPT_FOLDER)
         def premiumScripts = premiumScriptFolder.listFiles(new FilenameFilter() {
             boolean accept(File dir, String name) {
                 return name.endsWith(".groovy")
