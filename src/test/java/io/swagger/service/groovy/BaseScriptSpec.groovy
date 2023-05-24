@@ -1,5 +1,6 @@
 package io.swagger.service.groovy
 
+import io.swagger.BaseScriptExt
 import io.swagger.model.Bicycle
 import spock.lang.Specification
 

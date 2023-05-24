@@ -1,7 +1,6 @@
-package io.swagger.service.groovy
+package io.swagger
 
 import io.swagger.model.Bicycle
-
 import java.time.Year
 
 class BaseScriptExt extends BaseScript {

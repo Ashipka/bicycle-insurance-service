@@ -1,8 +1,8 @@
-package io.swagger.service.groovy.riskTypeScript.insuranceSumRule
+package insuranceSumRule
 
+import io.swagger.BaseScriptExt
+import io.swagger.RiskTypeInsuranceSumRule
 import io.swagger.model.Bicycle
-import io.swagger.service.groovy.BaseScriptExt
-import io.swagger.service.groovy.RiskTypeInsuranceSumRule
 
 class DamageInsuranceSumRule extends BaseScriptExt implements RiskTypeInsuranceSumRule {
 

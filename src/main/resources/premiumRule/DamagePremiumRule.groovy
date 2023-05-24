@@ -1,8 +1,8 @@
-package io.swagger.service.groovy.riskTypeScript.premiumRule
+package premiumRule
 
 import io.swagger.model.Bicycle
-import io.swagger.service.groovy.BaseScriptExt
-import io.swagger.service.groovy.RiskTypePremiumRule
+import io.swagger.BaseScriptExt
+import io.swagger.RiskTypePremiumRule
 
 class DamagePremiumRule extends BaseScriptExt implements RiskTypePremiumRule{
     static String riskType = "DAMAGE"

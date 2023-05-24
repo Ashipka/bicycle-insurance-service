@@ -1,7 +1,7 @@
 package io.swagger.service;
 
+import io.swagger.RuleEngine;
 import io.swagger.model.*;
-import io.swagger.service.groovy.RuleEngine;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

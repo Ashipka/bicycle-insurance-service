@@ -1,4 +1,4 @@
-package io.swagger.service.groovy
+package io.swagger
 
 class BaseScript extends Script {
 

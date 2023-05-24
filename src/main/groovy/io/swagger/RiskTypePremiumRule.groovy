@@ -1,4 +1,4 @@
-package io.swagger.service.groovy
+package io.swagger
 
 import io.swagger.model.Bicycle
 
