@@ -25,6 +25,11 @@ The application should now be running on port 8080.
 
 To use the application, you can use **swagger** 
 
+## **Upgrade**
+Application is used to process three type of risk types: DAMAGE, THEFT, THIRD_PARTY_DAMAGE.
+
+When we need add more risk types we just copy/paste/rename TemplateInsuranceSumRule.groovy and TemplatePremiumRule.groovy.
+Implement calculation logic inside these files.
 
 ## **Testing**
 
