@@ -1,6 +1,6 @@
 # Swagger generated server
 
-Spring Boot application for brokers, who will sell policies for bicycle.
+Spring Boot application for brokers, who will sell policies for bicycles.
 
 
 ## Overview  
